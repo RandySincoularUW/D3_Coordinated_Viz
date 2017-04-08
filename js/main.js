@@ -103,8 +103,8 @@ function setMap(){
 	
 	//* Use queue to parallelize asynchronous data loading
 	d3.queue() 
-		.defer(d3.csv, "data/us_energy_stats.csv") 	// Load attributes
-		.defer(d3.json,"data/us_states.topojson")	// Load choropleth data
+		.defer(d3.csv, "data/US_Energy_Stats.csv") 	// Load attributes
+		.defer(d3.json,"data/US_States.topojson")	// Load choropleth data
 	
 		//* The callback function fires when all the data has loaded 
 		//* Data is then sent to the callback() function
